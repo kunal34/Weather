@@ -43,8 +43,8 @@ function showError(error){
 
 // GET WEATHER FROM API PROVIDER
 function getWeather(latitude, longitude){
-    let api = `https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
-    
+    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+    //https://cors-anywhere.herokuapp.com/
     fetch(api)
         .then(function(response){
             let data = response.json();
